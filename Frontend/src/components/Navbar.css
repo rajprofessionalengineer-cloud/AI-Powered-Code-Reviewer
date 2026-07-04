@@ -1,0 +1,259 @@
+.navbar{
+
+    height:72px;
+
+    background:#161b22;
+
+    border-bottom:1px solid #30363d;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
+
+}
+
+/* LEFT */
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#238636,#2ea043);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    color:white;
+
+    box-shadow:0 8px 18px rgba(46,160,67,.35);
+
+}
+
+.title h2{
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+.title p{
+
+    color:#8b949e;
+
+    font-size:13px;
+
+    margin-top:3px;
+
+}
+
+/* RIGHT */
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#7ee787;
+
+    font-weight:600;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#2ea043;
+
+    animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.3);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* THEME BUTTON */
+
+.theme-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#21262d;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+.theme-btn:hover{
+
+    background:#30363d;
+
+}
+
+/* REVIEW BUTTON */
+
+.review-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#238636,#2ea043);
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.review-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(46,160,67,.35);
+
+}
+
+/* MINI LOADER */
+
+.loader-mini{
+
+    width:18px;
+
+    height:18px;
+
+    border:3px solid rgba(255,255,255,.3);
+
+    border-top:3px solid white;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+
+    padding:15px;
+
+}
+
+.title p{
+
+    display:none;
+
+}
+
+.status{
+
+    display:none;
+
+}
+
+.review-btn{
+
+    padding:10px 18px;
+
+}
+
+}

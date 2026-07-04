@@ -1,0 +1,441 @@
+.review-panel{
+
+    flex:1;
+
+    background:#0d1117;
+
+    border-radius:18px;
+
+    border:1px solid #30363d;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+/* ================= HEADER ================= */
+
+.review-header{
+
+    height:70px;
+
+    background:#161b22;
+
+    border-bottom:1px solid #30363d;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+
+}
+
+.review-header div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:18px;
+
+}
+
+.copy-btn{
+
+    background:#238636;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.copy-btn:hover{
+
+    background:#2ea043;
+
+    transform:translateY(-2px);
+
+}
+
+/* ================= BODY ================= */
+
+.review-body{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:35px;
+
+}
+
+/* Scroll */
+
+.review-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.review-body::-webkit-scrollbar-thumb{
+
+    background:#30363d;
+
+    border-radius:20px;
+
+}
+
+.review-body::-webkit-scrollbar-thumb:hover{
+
+    background:#58a6ff;
+
+}
+
+/* ================= HEADINGS ================= */
+
+.review-h1{
+
+    color:#58a6ff;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.review-h2{
+
+    color:#79c0ff;
+
+    margin-top:35px;
+
+    margin-bottom:18px;
+
+}
+
+.review-h3{
+
+    color:#7ee787;
+
+    margin-top:25px;
+
+    margin-bottom:12px;
+
+}
+
+/* ================= TEXT ================= */
+
+.review-p{
+
+    color:#c9d1d9;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.review-ul{
+
+    margin-left:28px;
+
+    margin-bottom:20px;
+
+}
+
+.review-li{
+
+    margin-bottom:12px;
+
+    color:#c9d1d9;
+
+}
+
+/* ================= BLOCKQUOTE ================= */
+
+.review-quote{
+
+    border-left:5px solid #58a6ff;
+
+    background:#161b22;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    margin:20px 0;
+
+    color:#8b949e;
+
+}
+
+/* ================= INLINE CODE ================= */
+
+.review-body code{
+
+    background:#161b22;
+
+    color:#7ee787;
+
+    padding:4px 8px;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+}
+
+/* ================= CODE BLOCK ================= */
+
+.review-body pre{
+
+    border-radius:15px;
+
+    overflow:auto;
+
+    margin:25px 0;
+
+    border-left:5px solid #2ea043;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+/* ================= TABLE ================= */
+
+.review-body table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:25px 0;
+
+}
+
+.review-body th{
+
+    background:#161b22;
+
+    color:white;
+
+    padding:15px;
+
+    border:1px solid #30363d;
+
+}
+
+.review-body td{
+
+    border:1px solid #30363d;
+
+    padding:15px;
+
+    color:#c9d1d9;
+
+}
+
+/* ================= EMPTY ================= */
+
+.empty-review{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#8b949e;
+
+    gap:20px;
+
+}
+
+.empty-review svg{
+
+    color:#58a6ff;
+
+}
+
+.empty-review h2{
+
+    color:white;
+
+}
+
+.empty-review p{
+
+    text-align:center;
+
+    line-height:1.8;
+
+}
+
+/* ================= LOADING ================= */
+
+.loading-container{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border:6px solid #30363d;
+
+    border-top:6px solid #58a6ff;
+
+    border-radius:50%;
+
+    animation:spin .9s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ================= REVIEW CARDS ================= */
+
+.issue-card{
+
+    background:#161b22;
+
+    border-left:6px solid #f85149;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.warning-card{
+
+    background:#161b22;
+
+    border-left:6px solid #d29922;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.success-card{
+
+    background:#161b22;
+
+    border-left:6px solid #2ea043;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.info-card{
+
+    background:#161b22;
+
+    border-left:6px solid #58a6ff;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+/* ================= ANIMATION ================= */
+
+.review-panel{
+
+    animation:fade .35s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0px);
+
+    }
+
+}
